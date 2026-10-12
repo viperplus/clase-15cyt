@@ -182,7 +182,7 @@ body.imprenta .pH{text-transform:none}
 <body class="imprenta">
 
 <div class="encabezado">
-  <h1>CLASE N.º 15 · INCLUSIÓN</h1>
+  <h1>CLASE N.º 15</h1>
   <p>La química del suelo, la nutrición vegetal y el manejo agroecológico</p>
 </div>
 
@@ -375,6 +375,7 @@ body.imprenta .pH{text-transform:none}
       <h2>✍️ Producción final · Ayudamos a la productora</h2>
       <button class="btn btn-escuchar" data-audio="a5" aria-label="Escuchar la producción final">&#128266;</button>
     </div>
+    <p class="ayuda solo-pantalla">🎙️ Si preferís, también podés grabar un audio con tu respuesta.</p>
     <p class="ayuda">💡 Pista: podés usar lo que marcaste en la Actividad 4.</p>
     <div class="situacion">
       <p class="tit-sit">🧾 El caso:</p>
@@ -404,7 +405,6 @@ body.imprenta .pH{text-transform:none}
     <label for="respuesta" class="tit-resp">Respuesta:</label>
     <textarea id="respuesta" placeholder="Escribí acá tu respuesta." oninput="contarPalabras()"></textarea>
     <p class="contador" id="contador">0 palabras · 0 oraciones</p>
-    <p class="ayuda solo-pantalla">Si te resulta más accesible, también podés grabar un audio con tu respuesta.</p>
     <div class="fb" id="fbFinal" aria-live="polite"></div>
     <button class="btn-revisar" onclick="revisarFinal()">&#9989; Guardar mi respuesta</button>
     <button class="btn-revisar btn-sec" onclick="alternarEjemplo(this)">&#128065; Ver un ejemplo</button>
@@ -504,7 +504,7 @@ const AUDIO = {
   a2: 'Actividad 2. Interpretar un valor de pH. Un suelo presenta un pH de 8,1. ¿Cómo se clasifica ese suelo? Opciones: ácido, neutro, alcalino.',
   a3: 'Actividad 3. Identificar un síntoma. Una planta tiene dificultad para formar flores y frutos. ¿Qué nutriente le está faltando? Opciones: nitrógeno, fósforo, potasio.',
   a4: 'Actividad 4. Elegir cómo cuidar el suelo. Una productora quiere mantener la tierra fértil durante muchos años. Leé las opciones y marcá las dos medidas correctas. Opción uno: incorporar abonos orgánicos para devolver nutrientes. Opción dos: sembrar siempre la misma especie en el mismo lugar. Opción tres: alternar cultivos distintos y sembrar leguminosas. Opción cuatro: aplicar fertilizante en cada cosecha, sin analizar el suelo.',
-  a5: 'Producción final. Ayudamos a la productora. Pista: podés usar lo que marcaste en la Actividad 4. El caso: una productora de Río Negro tiene un suelo con pH 8,1, poca materia orgánica y cultiva la misma especie desde hace varios años. Además, algunas plantas muestran deficiencia de micronutrientes, por lo que ella propone comprar un fertilizante y aplicarlo de inmediato. Tu tarea: escribí tres o cuatro oraciones explicando qué debería hacer la productora para cuidar su suelo.',
+  a5: 'Producción final. Ayudamos a la productora. Pista: podés usar lo que marcaste en la Actividad 4. El caso: una productora de Río Negro tiene un suelo con pH 8,1, poca materia orgánica y cultiva la misma especie desde hace varios años. Además, algunas plantas muestran deficiencia de micronutrientes, por lo que ella propone comprar un fertilizante y aplicarlo de inmediato. Tu tarea: escribí tres o cuatro oraciones explicando qué debería hacer la productora para cuidar su suelo. Si preferís, también podés grabar un audio con tu respuesta.',
   cierre: 'Cierre y autoevaluación. El suelo es un sistema de partículas sólidas, agua y aire, con raíces y microorganismos. Los nutrientes llegan a las raíces disueltos en la solución del suelo, en forma de iones. El pH influye en la disponibilidad de los nutrientes. La deficiencia de nitrógeno produce clorosis en las hojas más viejas. La fertilidad se mantiene con materia orgánica, rotaciones y leguminosas, y se pierde por lixiviación.',
   auto: '¿Qué logré hoy? Uno. Explico la solución del suelo y los iones. Dos. Relaciono el pH con la disponibilidad de nutrientes. Tres. Propongo dos medidas para la fertilidad.',
   b1: 'Los nutrientes son las sustancias que la planta necesita para crecer. El suelo es un sistema formado por partículas sólidas, agua y aire. Las partículas sólidas están constituidas por minerales y materia orgánica. El agua y el aire ocupan los espacios que existen entre las partículas. En el suelo viven microorganismos y crecen las raíces. Las raíces no absorben los granos de minerales. Los nutrientes llegan a la planta disueltos en el agua del suelo. Esa mezcla se llama solución del suelo. El recorrido es: suelo, solución del suelo, nutrientes disueltos y raíces. En la solución del suelo los nutrientes viajan en forma de iones, que son partículas con carga eléctrica. Hay potasio, amonio y nitrato. Los cationes, potasio y amonio, tienen carga positiva. Los aniones, nitrato, tienen carga negativa.',
